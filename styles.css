@@ -1,0 +1,79 @@
+:root {
+    --btn_result: #2f3eae;
+    --function_btns_bck:#0f2f7bd8;
+    --txt_fnctn: #1B9AAA;
+    --buttons: #766C7F;
+    --buttons_hgligt: #E2E2E2;
+}
+
+body {
+    background-color: #050505;
+    margin: 0;
+    padding: 1rem;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family: "Exo", sans-serif;
+}
+
+/*styles*/
+
+/*Display*/
+
+.display_container {
+    width: 100%;
+    height: 12rem;
+    color: var(--buttons_hgligt);
+    display: flex;
+}
+
+.display_container .result_display {
+    font-family: 'ZCOOL QingKe HuangYou', sans-serif;
+    font-size: 4rem;
+    margin: auto 0.7rem;
+    
+}
+
+.icon_container {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--txt_fnctn);
+    margin: 1rem 0 1rem 0;
+}
+
+/*buttons sections*/
+
+.buttons_container {/*change in the media queriess*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 6.9rem);
+    grid-gap: 0.8rem;
+}
+
+.buttons_container button {
+    border: none;
+    border-radius: 0.7rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 0;
+}
+
+.btn_blue {
+    background-color: var(--function_btns_bck);
+    color: var(--txt_fnctn);
+}
+
+.normal_btn {
+    background-color: var(--buttons);
+    color: var(--buttons_hgligt);
+}
+
+.equal_btn {
+    background-color: var(--btn_result);
+    color: var(--buttons_hgligt);
+    grid-column: 4 / 5;
+    grid-row: 4 / 6;
+}
